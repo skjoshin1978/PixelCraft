@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View our portfolio of stunning websites and digital projects. See how PixelCraft Studio has helped businesses build their online presence.">
+    <meta name="keywords"
+        content="web design portfolio, website examples, PixelCraft projects, web development showcase">
+
+    <title>Portfolio - PixelCraft Studio</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-base);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span>🎨</span> PixelCraft Studio
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p>Showcasing Our Best Work & Success Stories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Our Work</p>
+                <h2>Projects We're Proud Of</h2>
+                <p>Explore our collection of beautiful websites and digital solutions</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                        alt="Business Dashboard Project">
+                    <div class="portfolio-overlay">
+                        <h3>Tech Solutions Inc.</h3>
+                        <p>Corporate Website • Business</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Modern corporate website with advanced features
+                            and analytics dashboard.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item fade-in" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop"
+                        alt="E-Commerce Store">
+                    <div class="portfolio-overlay">
+                        <h3>StyleHub Boutique</h3>
+                        <p>Online Store • E-Commerce</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Full-featured fashion e-commerce platform with
+                            seamless checkout experience.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item fade-in" data-category="portfolio">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop"
+                        alt="Photography Portfolio">
+                    <div class="portfolio-overlay">
+                        <h3>Lens & Light Studio</h3>
+                        <p>Photography Portfolio</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Stunning visual portfolio showcasing
+                            professional photography work.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                        alt="Finance Website">
+                    <div class="portfolio-overlay">
+                        <h3>Global Finance Solutions</h3>
+                        <p>Financial Services • Business</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Professional website for financial consulting
+                            firm with trust-building design.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item fade-in" data-category="creative">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop"
+                        alt="Design Agency Website">
+                    <div class="portfolio-overlay">
+                        <h3>Creative Minds Agency</h3>
+                        <p>Design Agency • Creative</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Bold and innovative website for a creative
+                            design agency.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item fade-in" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
+                        alt="Furniture Store">
+                    <div class="portfolio-overlay">
+                        <h3>Modern Living Store</h3>
+                        <p>Furniture Store • E-Commerce</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Elegant e-commerce platform for premium
+                            furniture and home decor.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
+                        alt="Real Estate Website">
+                    <div class="portfolio-overlay">
+                        <h3>Urban Properties</h3>
+                        <p>Real Estate • Business</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Comprehensive property listing platform with
+                            advanced search features.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item fade-in" data-category="portfolio">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&h=600&fit=crop"
+                        alt="Artist Portfolio">
+                    <div class="portfolio-overlay">
+                        <h3>Artisan Collective</h3>
+                        <p>Artist Portfolio</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Beautiful showcase for artists featuring gallery
+                            and online Art store.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-item fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&h=600&fit=crop"
+                        alt="Consulting Website">
+                    <div class="portfolio-overlay">
+                        <h3>Business Catalyst</h3>
+                        <p>Consulting Firm • Business</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Professional website for business consulting
+                            services with lead generation.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 10 -->
+                <div class="portfolio-item fade-in" data-category="creative">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=600&fit=crop"
+                        alt="Restaurant Website">
+                    <div class="portfolio-overlay">
+                        <h3>Gourmet Bistro</h3>
+                        <p>Restaurant • Creative</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Mouth-watering restaurant website with online
+                            reservation system.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 11 -->
+                <div class="portfolio-item fade-in" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
+                        alt="Electronics Store">
+                    <div class="portfolio-overlay">
+                        <h3>TechHub Electronics</h3>
+                        <p>Electronics Store • E-Commerce</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">High-converting online store for electronics and
+                            gadgets.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 12 -->
+                <div class="portfolio-item fade-in" data-category="creative">
+                    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=800&h=600&fit=crop"
+                        alt="Event Planning">
+                    <div class="portfolio-overlay">
+                        <h3>Dream Events Co.</h3>
+                        <p>Event Planning • Creative</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Vibrant website for event planning company with
+                            booking system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Highlight -->
+    <section id="case-study" style="background: #f8f9ff;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Success Story</p>
+                <h2>Featured Case Study</h2>
+            </div>
+
+            <div class="card fade-in" style="max-width: 900px; margin: 0 auto;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">StyleHub Boutique E-Commerce Transformation</h3>
+
+                <div class="grid-2" style="gap: 3rem; align-items: center;">
+                    <div>
+                        <h4>The Challenge</h4>
+                        <p>StyleHub Boutique needed to transition from a physical store to online retail. They required
+                            a modern, mobile-friendly e-commerce platform that could handle their growing inventory and
+                            provide a seamless shopping experience.</p>
+
+                        <h4 style="margin-top: 2rem;">Our Solution</h4>
+                        <p>We designed and developed a custom e-commerce platform with intuitive navigation, secure
+                            payment processing, and a beautiful visual design that reflected their brand identity.</p>
+                    </div>
+
+                    <div>
+                        <h4>The Results</h4>
+                        <div class="grid-2" style="gap: 1.5rem; margin-top: 1rem;">
+                            <div class="card"
+                                style="text-align: center; background: var(--primary-gradient); color: white;">
+                                <h3 style="color: white; font-size: 3rem;">250%</h3>
+                                <p style="color: rgba(255,255,255,0.95);">Sales Increase</p>
+                            </div>
+
+                            <div class="card"
+                                style="text-align: center; background: var(--accent-gradient); color: white;">
+                                <h3 style="color: white; font-size: 3rem;">15K+</h3>
+                                <p style="color: rgba(255,255,255,0.95);">Monthly Visitors</p>
+                            </div>
+                        </div>
+
+                        <p
+                            style="margin-top: 2rem; padding: 1.5rem; background: rgba(102, 126, 234, 0.1); border-radius: 10px;">
+                            <em>"Working with PixelCraft Studio was a game-changer for our business. The new website is
+                                beautiful and our online sales have skyrocketed!"</em><br><br>
+                            <strong>- Priya Kapoor, Founder</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section id="clients">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Trusted By</p>
+                <h2>Our Valued Clients</h2>
+                <p>Join hundreds of satisfied clients who trust PixelCraft Studio</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">TechSolutions</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">StyleHub</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">GlobalFinance</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">UrbanProps</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">CreativeMinds</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">DreamEvents</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">TechHub</h3>
+                </div>
+
+                <div class="card fade-in"
+                    style="padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <h3 style="margin: 0; color: var(--text-secondary); font-size: 1.5rem;">GourmetBistro</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+        <div class="container">
+            <div class="fade-in">
+                <h2 style="color: white; margin-bottom: 1rem;">Ready to See Your Project Here?</h2>
+                <p
+                    style="color: rgba(255,255,255,0.95); font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Let's create something amazing together. Start your project with PixelCraft Studio today.
+                </p>
+                <a href="contact.html" class="btn" style="background: white; color: #667eea;">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PixelCraft Studio</h3>
+                    <p>We build modern, responsive websites that create strong brand presence and increase customer
+                        trust.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#web-design">Web Design</a>
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#ecommerce">E-Commerce</a>
+                    <a href="services.html#seo">SEO & Marketing</a>
+                    <a href="services.html#maintenance">Maintenance</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@pixelcraftstudio.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PixelCraft Studio. All rights reserved.</p>
+                <p><strong>Designed & Developed by PixelCraft Studio</strong></p>
+                <p>We Build Websites That Build Trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

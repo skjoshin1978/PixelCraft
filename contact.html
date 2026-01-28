@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with PixelCraft Studio. Contact us for web design, development, and digital solutions. We're here to help your business grow online.">
+    <meta name="keywords" content="contact PixelCraft Studio, web design inquiry, get a quote, business website">
+
+    <title>Contact Us - PixelCraft Studio</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .contact-info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span>🎨</span> PixelCraft Studio
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p>Let's Discuss Your Next Project</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact-info" style="background: #f8f9ff; margin-top: -50px; position: relative; z-index: 1;">
+        <div class="container">
+            <div class="grid-3">
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p style="margin-bottom: 1rem;">Available Mon-Sat, 9AM-6PM</p>
+                    <a href="tel:+919876543210"
+                        style="color: var(--primary-color); font-weight: 600; font-size: 1.1rem;">+91 98765 43210</a>
+                </div>
+
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p style="margin-bottom: 1rem;">We'll respond within 24 hours</p>
+                    <a href="mailto:info@pixelcraftstudio.com"
+                        style="color: var(--primary-color); font-weight: 600; font-size: 1.1rem;">info@pixelcraftstudio.com</a>
+                </div>
+
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p style="margin-bottom: 1rem;">Office Address</p>
+                    <p style="color: var(--text-secondary); font-weight: 500;">Andheri West,<br>Mumbai,
+                        Maharashtra<br>India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section id="contact-form-section">
+        <div class="container">
+            <div class="grid-2" style="gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <h2>Send Us a Message</h2>
+                    <p style="margin-bottom: 2rem;">Have a question or project in mind? Fill out the form below and
+                        we'll get back to you as soon as possible.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                                <option value="">Select a service</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ecommerce">E-Commerce</option>
+                                <option value="seo">SEO & Marketing</option>
+                                <option value="maintenance">Website Maintenance</option>
+                                <option value="complete-package">Complete Website Package</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                                <option value="">Select budget range</option>
+                                <option value="under-25k">Under ₹25,000</option>
+                                <option value="25k-50k">₹25,000 - ₹50,000</option>
+                                <option value="50k-100k">₹50,000 - ₹1,00,000</option>
+                                <option value="100k-plus">₹1,00,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Tell us about your project, requirements, and goals..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light); text-align: center;">
+                            We respect your privacy. Your information will never be shared.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Quick Contact & Map -->
+                <div>
+                    <!-- Quick Contact Options -->
+                    <div class="card fade-in"
+                        style="margin-bottom: 2rem; background: var(--primary-gradient); color: white;">
+                        <h3 style="color: white;">Quick Contact Options</h3>
+                        <p style="color: rgba(255,255,255,0.95); margin-bottom: 2rem;">Choose your preferred way to
+                            reach us</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <a href="https://wa.me/919876543210" target="_blank" class="btn"
+                                style="background: #25D366; color: white; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+
+                            <a href="tel:+919876543210" class="btn"
+                                style="background: white; color: var(--primary-color); display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <i class="fas fa-phone" style="font-size: 1.2rem;"></i>
+                                <span>Call Now</span>
+                            </a>
+
+                            <a href="mailto:info@pixelcraftstudio.com" class="btn btn-secondary"
+                                style="color: white; border-color: white; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <i class="fas fa-envelope" style="font-size: 1.2rem;"></i>
+                                <span>Email Us</span>
+                            </a>
+                        </div>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <h4 style="color: white; margin-bottom: 1rem;">Business Hours</h4>
+                            <p style="color: rgba(255,255,255,0.95); margin-bottom: 0.5rem;">
+                                <i class="far fa-clock"></i> Monday - Friday: 9:00 AM - 6:00 PM
+                            </p>
+                            <p style="color: rgba(255,255,255,0.95); margin-bottom: 0.5rem;">
+                                <i class="far fa-clock"></i> Saturday: 9:00 AM - 2:00 PM
+                            </p>
+                            <p style="color: rgba(255,255,255,0.95);">
+                                <i class="far fa-clock"></i> Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="fade-in">
+                        <h3 style="margin-bottom: 1rem;">Find Us On Map</h3>
+                        <div class="map-container">
+                            <!-- Embedded Google Maps - Replace with your actual location -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30169.45784448937!2d72.82229995!3d19.1197397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d90eb0c985%3A0x9d51394b73f3e78a!2sAndheri%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1643725300000!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="background: #f8f9ff;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Common Questions</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to questions you may have</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card fade-in" style="margin-bottom: 1.5rem;">
+                    <h3>How long does it take to build a website?</h3>
+                    <p>Typically, a standard 5-7 page business website takes 2-4 weeks from start to launch. The
+                        timeline depends on the complexity of features and how quickly you can provide content and
+                        feedback.</p>
+                </div>
+
+                <div class="card fade-in" style="margin-bottom: 1.5rem;">
+                    <h3>What is the cost of a website?</h3>
+                    <p>Our complete 7-page website package starts at ₹25,000. Custom projects are quoted based on your
+                        specific requirements. Contact us for a personalized quote.</p>
+                </div>
+
+                <div class="card fade-in" style="margin-bottom: 1.5rem;">
+                    <h3>Do you provide hosting and domain services?</h3>
+                    <p>We provide expert guidance on selecting and setting up the best hosting and domain for your
+                        needs. We work with all major hosting providers and can help you get started.</p>
+                </div>
+
+                <div class="card fade-in" style="margin-bottom: 1.5rem;">
+                    <h3>Will my website be mobile-friendly?</h3>
+                    <p>Absolutely! All our websites are built with a mobile-first approach and are fully responsive,
+                        ensuring perfect display on all devices - smartphones, tablets, and desktops.</p>
+                </div>
+
+                <div class="card fade-in" style="margin-bottom: 1.5rem;">
+                    <h3>What kind of support do you provide after launch?</h3>
+                    <p>Every website comes with 7 days of free support after launch. We also offer ongoing maintenance
+                        packages for continued support, updates, and optimization.</p>
+                </div>
+
+                <div class="card fade-in">
+                    <h3>Can I update the website content myself?</h3>
+                    <p>Yes! We can build your website with a user-friendly content management system (CMS) that allows
+                        you to easily update text, images, and other content without technical knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Stay Connected</p>
+                <h2>Follow Us on Social Media</h2>
+                <p>Join our community and stay updated with our latest work and tips</p>
+            </div>
+
+            <div class="social-links" style="justify-content: center; gap: 1.5rem;">
+                <a href="https://facebook.com" target="_blank" class="social-icon fade-in"
+                    style="width: 60px; height: 60px; font-size: 1.5rem; background: var(--primary-gradient);"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon fade-in"
+                    style="width: 60px; height: 60px; font-size: 1.5rem; background: var(--primary-gradient);"
+                    aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon fade-in"
+                    style="width: 60px; height: 60px; font-size: 1.5rem; background: var(--primary-gradient);"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon fade-in"
+                    style="width: 60px; height: 60px; font-size: 1.5rem; background: var(--primary-gradient);"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon fade-in"
+                    style="width: 60px; height: 60px; font-size: 1.5rem; background: var(--primary-gradient);"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PixelCraft Studio</h3>
+                    <p>We build modern, responsive websites that create strong brand presence and increase customer
+                        trust.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#web-design">Web Design</a>
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#ecommerce">E-Commerce</a>
+                    <a href="services.html#seo">SEO & Marketing</a>
+                    <a href="services.html#maintenance">Maintenance</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@pixelcraftstudio.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PixelCraft Studio. All rights reserved.</p>
+                <p><strong>Designed & Developed by PixelCraft Studio</strong></p>
+                <p>We Build Websites That Build Trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
